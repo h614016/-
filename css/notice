@@ -1,0 +1,129 @@
+/*  NOTICE
+ .notice {}
+
+.notice .notice-line {
+  position: relative;
+  /* height 기본값이 auto라 최대한 늘어나려고 하는데 안의 요소인 inner의 높이에 막혀 더 이상 크지 못함
+  > .bg-left, bg-right의 height는 부모요소 기준 100%이므로 .inner의 높이만 제어하는 것으로 다른 요소 모두의 높이도 함께제어정하게 되는 것  */
+ }
+
+.notice .notice-line .bg-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #333;
+} */
+
+ .notice .notice-line .bg-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #f6f5ef;
+
+}
+
+.notice .notice-line .inner {
+  height: 62px;
+  display: flex;
+
+}
+
+.notice .notice-line .inner__left {
+  width: 60%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+
+}
+
+.notice .notice-line .inner__left h2 {
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 20px;
+
+}
+.notice .notice-line .inner__left .swiper-container {
+  flex-grow: 11;
+  height: 62px;
+
+}
+
+.notice .notice-line .inner__left .swiper-container .swiper-slide {
+  height: 62px;
+  display: flex;
+  align-items: center;
+
+}
+
+.notice .notice-line .inner__left .swiper-container .swiper-slide a {
+  color: #fff;
+}
+
+.notice .notice-line .inner__left .notice-line__more {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice .notice-line .inner__left .notice-line__more .material-icons {
+  color: white;
+  font-size: 30px;
+} 
+.notice .notice-line .inner .inner__right {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+   /* flex-end : flex의 끝으로 보낸다 = 오른쪽정렬시킨다. 
+    */
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner__right h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.notice .notice-line .inner .inner__right .toggle-promotion {
+  height: 62px;
+  width: 62px;
+  cursor: pointer;
+   /* 공지사항 더보기 버튼과는 다르게 업로드 버튼은 a태그가 아니므로 커서:포인터를 통해 클릭할 수 있도록 설정  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notice .notice-line .inner .inner__right .toggle-promotion .material-icons {
+  font-size: 30px;
+}
+
+ .notice .promotion {
+  height: 693px;
+  background-color: #f6f5ef;
+  position:relative
+}
+
+.notice .promotion .swiper-container {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  background-color: orange;
+  text-align: center;
+  font-size: 200px;
+  position: absolute;
+  top:40px;
+  left:50%;
+  margin-left: calc((819px * 3 + 20px) / -2); */
+   /* left로 옮긴 만큼(width의 50%) margin left에 음수값을 설정해서
+  확대해도 가운데가 줌되게끔  */
+}
+
+.notice .promotion .swiper-container .swiper-slide {}
